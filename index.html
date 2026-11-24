@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puja Rani Nayak | Software Developer</title>
+  <meta name="description" content="Portfolio of Puja Rani Nayak, aspiring Software Developer.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #e8ecf7;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1050px, 90%); margin: auto; }
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid #26304a;
+      position: sticky; top: 0;
+      background: #0b1020ee;
+    }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+    .logo { color: #8b9cff; font-weight: bold; font-size: 22px; }
+    nav div { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav a:hover { color: #9baaff; }
+    .hero { padding: 100px 0 85px; }
+    .tag { color: #9baaff; font-weight: bold; }
+    h1 { font-size: clamp(38px, 7vw, 64px); line-height: 1.15; margin: 15px 0; }
+    h1 span { color: #9baaff; }
+    .hero p { max-width: 650px; color: #b9c2d8; font-size: 18px; }
+    .btn {
+      display: inline-block; margin: 25px 12px 0 0;
+      padding: 11px 20px; border-radius: 8px;
+      background: #7185ff; color: white; font-weight: bold;
+    }
+    .btn.secondary { background: transparent; border: 1px solid #7185ff; }
+    section { padding: 65px 0; }
+    h2 { font-size: 30px; margin-bottom: 25px; }
+    .muted { color: #b9c2d8; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card {
+      background: #141d33; border: 1px solid #283653;
+      border-radius: 12px; padding: 23px;
+    }
+    .card h3 { color: #a8b5ff; margin-bottom: 10px; }
+    .card p { color: #c1c9dc; }
+    .skills { display: flex; flex-wrap: wrap; gap: 12px; }
+    .skills span {
+      background: #182542; border: 1px solid #34466e;
+      border-radius: 20px; padding: 8px 15px; color: #dce3ff;
+    }
+    footer { text-align: center; padding: 30px; border-top: 1px solid #26304a; color: #aeb8ce; }
+    @media (max-width: 600px) {
+      nav { align-items: flex-start; flex-direction: column; }
+      nav div { gap: 12px; }
+      .hero { padding: 65px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#">Puja Rani Nayak</a>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="tag">HELLO, I'M</div>
+      <h1>Puja Rani <span>Nayak</span></h1>
+      <h2>Aspiring Software Developer</h2>
+      <p>
+        Final-year Computer Science and Information Technology student
+        passionate about building practical applications using Python,
+        Flask, JavaScript and SQL. I enjoy solving problems and learning
+        new technologies.
+      </p>
+      <a class="btn" href="#projects">View My Projects</a>
+      <a class="btn secondary" href="https://github.com/pujababa" target="_blank">GitHub Profile</a>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="muted">
+          I am pursuing B.Tech in Computer Science and Information Technology
+          at Trident Academy of Technology, Bhubaneswar (2027).
+          I have hands-on experience developing web applications, integrating
+          APIs, working with databases and implementing secure authentication.
+          I have also solved 200+ problems on LeetCode.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <span>Python</span><span>C++</span><span>JavaScript</span>
+          <span>HTML</span><span>CSS</span><span>SQL</span>
+          <span>Flask</span><span>REST APIs</span><span>SQLite</span>
+          <span>MySQL</span><span>Git</span><span>GitHub</span>
+          <span>Postman</span><span>OOP</span><span>DSA</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>AI Career Copilot</h3>
+            <p>
+              A career guidance and placement preparation platform with
+              resume analysis, job matching, skill gap analysis and
+              mock interview features.
+            </p>
+            <p class="muted">Python · Flask · SQLite · JavaScript · Gemini API</p>
+            <a class="btn" href="https://ai-career-copilot-rwi0.onrender.com/" target="_blank">Live Demo</a>
+          </article>
+
+          <article class="card">
+            <h3>Podcast Buddy</h3>
+            <p>
+              A news-to-podcast application that discovers news, generates
+              podcast scripts and creates multilingual audio in English,
+              Hindi, Hinglish and Odia.
+            </p>
+            <p class="muted">Python · Flask · JavaScript · Gemini API · SerpAPI</p>
+            <a class="btn" href="https://podcast-buddy.onrender.com" target="_blank">Live Demo</a>
+            <a class="btn secondary" href="https://github.com/pujababa/podcast-buddy" target="_blank">GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Internship Experience</h2>
+        <div class="card">
+          <h3>Python with AI/ML Intern</h3>
+          <p><strong>MindBrain Innovations Pvt. Ltd.</strong> · Jul–Aug 2026</p>
+          <p class="muted">
+            Worked on Python-based application development and developed
+            and presented the Podcast Buddy project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Let's Connect</h2>
+        <p class="muted">I am open to entry-level Software Developer opportunities.</p>
+        <p style="margin-top:15px">
+          GitHub: <a href="https://github.com/pujababa" target="_blank">github.com/pujababa</a>
+        </p>
+        <p>LinkedIn: Add your LinkedIn profile link here</p>
+        <p>Email: Add your professional email here</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Puja Rani Nayak. All rights reserved.
+  </footer>
+</body>
+</html>
